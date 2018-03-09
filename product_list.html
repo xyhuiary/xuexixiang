@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style></style>
+  <link rel="stylesheet" href="css/headers.css">
+  <link rel="stylesheet" href="css/bases.css">
+  <link rel="stylesheet" type="text/css" href="fangdajing/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="gouwuche/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="dingzhi/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="xiaoxingxing/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="fenxiang/iconfont.css">
+  <link rel="stylesheet" href="css/product_list.css">
+ </head>
+ <body>
+	<div class="main">
+		<iframe src="headers.html" frameborder="0" id="header"></iframe>	
+		<div id="list">
+			<!--左图-->
+			<div class="left">
+				<img src="3/15.jpg" alt="">
+			</div>
+			<!--右详情-->
+			<div class="right">
+				<p class="title">
+                    华姿仪赏 相思 原创设计汉服女装日常印花交领襦裙大袖魏晋风秋新         
+                </p>
+				<div class="price_box">
+					<div class="price">
+					<i>￥</i>66.00
+					</div>
+					<div class="f1">
+						<i class="f2">汉服购女装价</i>
+						<span class="f3">价格:￥96.00</span>
+					</div>
+					<div class="d1">
+						<div class="d2">
+							<i class="iconfont icon-icon"></i>定制
+						</div>			
+						<div class="d3">交易成功:&nbsp <i>12</i>
+						</div>
+					</div>
+				</div>
+				<div class="y1">
+					<div class="y2">邮费:&nbsp&nbsp<i>包邮￥0.00</i></div>
+					<div class="y3">尺码:&nbsp&nbsp<i class="active" data-toggle="item">s</i><i data-toggle="item">m</i></div>
+						<script src="js/jquery-3.2.0.js"></script>
+						<script>
+							$(".y1>.y3").on("click","[data-toggle=item]",e=>{
+								e.preventDefault();
+								var $tar=$(e.target);
+								if(!$tar.is(".active")){
+									$tar.addClass("active").siblings().removeClass("active");
+								}
+							})
+						</script>
+					<div class="y4">样式:&nbsp&nbsp<i class="active" data-taggle=item>紫色印花交领单件</i><i data-taggle=item>粉色纯色交领单件</i></div>
+					<script>
+						$(".y1>.y4").on("click","[data-taggle=item]",e=>{
+							e.preventDefault();
+							var $tar=$(e.target);
+							if(!$tar.is(".active")){
+								$tar.addClass("active").siblings().removeClass("active");
+							}
+						})
+					</script>
+					<div class="y5">数量:&nbsp&nbsp
+						<a class="no">-</a>
+						<input type="text" value="1" maxlength="6">
+						<a class="add">+</a><i>件（库存20件）</i>
+					</div>
+				</div>
+				<div class="gou">
+					<a href="" class="gou_a">立即剁手</a>
+					<a href="" class="gou_b">加入购物车</a>
+				</div>
+				<div class="fenxiang">
+					<i class="iconfont icon-xingxing"></i>&nbsp<a href="#">种草（50人已种）</a>
+					&nbsp&nbsp&nbsp分享到 :&nbsp&nbsp&nbsp<a href="#"><i class="iconfont icon-weixin"></i></a>
+					<a href="#"><i class="iconfont icon-qq"></i> </a><a href="#"><i class="iconfont icon-qqkongjian"></i></a>
+					<a href="#"><i class="iconfont icon-weibo"></i></a>
+				</div>
+			</div>
+		</div>
+		<!--商品详情-->
+		<div class="nav">
+			<div class="tabs">
+				<div class="active"><a data-toggle="item">商品详情</a></div>
+				<div><a data-toggle="item">累计评论</a></div>
+				<div><a data-toggle="item">商家服务</a></div>
+			</div>
+			<div class="box"></div>
+		</div>
+			<script>
+				$(".nav>.tabs").on("click","[data-toggle=item]",e=>{
+					e.preventDefault();
+					var $tar=$(e.target).parent();
+					if(!$tar.is(".active")){
+						$tar.addClass("active").siblings().removeClass("active");
+					}
+				})
+			</script>
+	</div>
+ </body>
+</html>

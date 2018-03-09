@@ -1,0 +1,21 @@
+
+#footere{
+	background:white;
+	padding:60px 0 20px 0;
+	margin-top:80px;
+}
+#footere p{
+	text-align:center;
+	margin-bottom:20px;
+}
+#footere p > a{
+	color:#555;
+	font-size:15px;
+}
+#footere p > a:hover{
+	color:red;
+}
+#footere p > b{
+	color:#ddd;
+	margin:14px;
+}
